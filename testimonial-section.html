@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+
+        }
+        .bttom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .card .card-h{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 20px;
+
+        }
+        .card .card-h img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .card .card-h  div > p{
+            font-size: 14px;
+            color: rgb(72, 72, 228);
+            margin: 3px 0;
+        }
+        .info{
+            position: relative;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+
+        }
+        .info::before{
+            content: "";
+            position: absolute;
+            border: 15px solid ;
+            top: 76px;
+            left: 0;
+            border-color:transparent transparent rgb(66, 66, 243)  blue  ;
+           
+
+        }
+        .info::after{
+            content: "";
+            position: absolute;
+            border: 15px solid ;
+            top: 76px;
+            right: 0;
+            border-color:transparent blue rgb(66, 66, 243)   transparent  ;
+           
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="card">
+                <div class="card-h">
+                    <img src="./imgs/1.jpg" alt="">
+                    <div>
+                        <h4>Steve Thomas</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint reprehenderit necessitatibus repudiandae quis fugit aliquam eos laboriosam ratione molestias dolores. Incidunt quo pariatur omnis officiis praesentium, eum cupiditate hic animi?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-h">
+                    <img src="./imgs/2.jpg" alt="">
+                    <div>
+                        <h4>Steve Thomas</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint reprehenderit necessitatibus repudiandae quis fugit aliquam eos laboriosam ratione molestias dolores. Incidunt quo pariatur omnis officiis praesentium, eum cupiditate hic animi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="bttom">
+            <span>&lt;</span>
+            <span>&gt;</span>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
